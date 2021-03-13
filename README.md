@@ -1,4 +1,4 @@
-# JGen
+# JGen 📔️
 
 Generate a text-based journal from a template file.
 
