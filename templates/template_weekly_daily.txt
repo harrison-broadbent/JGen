@@ -1,0 +1,34 @@
+---------------------------------------------------------------------------
+Week: WEEKNUM
+---
+
+Weekly Goals:
+
+---
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+DD_NAME, DD-MM-YY
+DAYNUM+
+
+---
+
+Review:
+
+---

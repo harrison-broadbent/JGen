@@ -1,0 +1,14 @@
+_____________________________
+Week: WEEKNUM
+DD_NAME, DD MM_NAME - +++++++
+DD_NAME, DD MM_NAME
+
+Todos: 
+	- 
+	-
+	-
+
+Plans: 
+	-
+	-
+	-
