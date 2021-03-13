@@ -91,7 +91,10 @@ To get started:
   - See an [Example](#Example) to walk through a specific example of a template file.
 
 - Run the JGen Python script, and input the number of times the template should be reproduced.
+
   - Ex: 365 entries for a daily journal spanning a year, 52 entries for a weekly journal
+
+- journal.txt will be populated with text based on the template and the number of entries specified.
 
 ## Details
 
