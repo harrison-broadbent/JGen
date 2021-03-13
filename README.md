@@ -4,12 +4,73 @@ Generate a text-based journal from a template file.
 
 ## Contents
 
+- [Example](#example)
 - [Overview](#overview)
 - [Usage](#usage)
 - [Details](#details)
 - [Reserved Keywords](#reserved-keywords)
-- [Example](#example)
 - [Gotchas](#gotchas)
+
+### Example
+
+Given the following template (available as templates/template_weekly.txt) -
+
+```
+_____________________________
+Week: WEEKNUM, Year: YY
+DD_NAME, DD MM_NAME - +++++++
+DD_NAME, DD MM_NAME
+
+Todos: - - -
+
+Plans: - - -
+```
+
+and running JGen for two entries gives us -
+
+```
+_____________________________
+Week: 10, Year: 2021
+Saturday, 13 March -
+Saturday, 20 March
+
+Todos:
+	-
+	-
+	-
+
+Plans:
+	-
+	-
+	-
+
+
+_____________________________
+Week: 11, Year: 2021
+Saturday, 20 March -
+Saturday, 27 March
+
+Todos:
+	-
+	-
+	-
+
+Plans:
+	-
+	-
+	-
+
+```
+
+Lets break down what happened -
+
+1. JGen sets it's internal date - "today's" date, from your perspective.
+2. JGen runs through line 1 and line 2 of template.txt, replacing keywords with their corresponding information and then writing the output to journal.txt.
+3. At the end of line 2 there are seven + (plus) symbols
+   - JGen removes these from the output, and increments the internal date counter by 7 days.
+4. JGen fills out line 3 with the new date information, then fills out the rest of the information for the first entry.
+5. It then repeats this for the second entry, carrying over the date from the end of the first entry.
+6. JGen halts, with journal.txt containing our final output.
 
 ## Overview
 
@@ -86,67 +147,6 @@ Part of the templating process is to indicate using a (+) symbol when to increme
     ```
     21/02/2050 - 28/02/2050
     ```
-
-### Example
-
-Given the following template (available as templates/template_weekly.txt) -
-
-```
-_____________________________
-Week: WEEKNUM, Year: YY
-DD_NAME, DD MM_NAME - +++++++
-DD_NAME, DD MM_NAME
-
-Todos: - - -
-
-Plans: - - -
-```
-
-and running JGen for two entries gives us -
-
-```
-_____________________________
-Week: 10, Year: 2021
-Saturday, 13 March -
-Saturday, 20 March
-
-Todos:
-	-
-	-
-	-
-
-Plans:
-	-
-	-
-	-
-
-
-_____________________________
-Week: 11, Year: 2021
-Saturday, 20 March -
-Saturday, 27 March
-
-Todos:
-	-
-	-
-	-
-
-Plans:
-	-
-	-
-	-
-
-```
-
-Lets break down what happened -
-
-1. JGen sets it's internal date - "today's" date, from your perspective.
-2. JGen runs through line 1 and line 2 of template.txt, replacing keywords with their corresponding information and then writing the output to journal.txt.
-3. At the end of line 2 there are seven + (plus) symbols
-   - JGen removes these from the output, and increments the internal date counter by 7 days.
-4. JGen fills out line 3 with the new date information, then fills out the rest of the information for the first entry.
-5. It then repeats this for the second entry, carrying over the date from the end of the first entry.
-6. JGen halts, with journal.txt containing our final output.
 
 ## Gotchas
 
