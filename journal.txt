@@ -1,32 +1,3 @@
-
-_____________________________
-Week: 10, Year: 2021
-Saturday, 13 March - 
-Saturday, 20 March
-
-Todos: 
-	- 
-	-
-	-
-
-Plans: 
-	-
-	-
-	-
-
-
-_____________________________
-Week: 11, Year: 2021
-Saturday, 20 March - 
-Saturday, 27 March
-
-Todos: 
-	- 
-	-
-	-
-
-Plans: 
-	-
-	-
-	-
-
+1. Fill out template.txt with your template, or use an example from /templates
+2. Run "python3 JGen.py" and follow the prompts
+3. Return to this file

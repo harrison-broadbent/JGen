@@ -4,12 +4,31 @@ Generate a text-based journal from a template file.
 
 ## Contents
 
+- [Getting Started](#getting-started)
 - [Example](#example)
 - [Overview](#overview)
 - [Usage](#usage)
 - [Details](#details)
 - [Reserved Keywords](#reserved-keywords)
 - [Gotchas](#gotchas)
+
+### Getting Started
+
+1. Clone this repository -
+
+- `git clone https://github.com/harrison-broadbent/JGen.git`
+
+2. Edit "template.txt", copy and paste an example from /templates, or use the placeholder template -
+
+- `vim template.txt`
+
+3. Run JGen and follow the prompts -
+
+- `python3 JGen.py`
+
+4. Inspect "journal.txt" -
+
+- `vim journal.txt`
 
 ### Example
 
